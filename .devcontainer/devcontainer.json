@@ -14,5 +14,7 @@
         "esbenp.prettier-vscode"
       ]
     }
-  }
+  },
+
+  "postCreateCommand": "if [ '${localEnv:OS:unknown}' = 'Windows_NT' ]; then git config --global --add safe.directory '${containerWorkspaceFolder}' && git -C '${containerWorkspaceFolder}' config --local core.fileMode false; fi"
 }
