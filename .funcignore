@@ -6,6 +6,11 @@ dist/scripts/
 .vscode
 local.settings.json
 test
+/tests/
+**/*.test.ts
+vitest*.mts
+tsconfig.test.json
+/coverage/
 getting_started.md
 node_modules/@types/
 node_modules/azure-functions-core-tools/
